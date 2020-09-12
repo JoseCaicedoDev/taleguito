@@ -180,8 +180,8 @@ button {
 .slider-card {
   width: 400px;
   background-color: #99b0b585;
-  height:250px;
-  margin:20px;
+  height: 250px;
+  margin: 20px;
   /*-webkit-box-shadow: 1px -1px 32px -2px rgba(181,181,181,1);
   -moz-box-shadow: 1px -1px 32px -2px rgba(181,181,181,1);
   box-shadow: 1px -1px 32px -2px rgba(181,181,181,1);*/
@@ -191,63 +191,60 @@ button {
 }
 
 /*Styles for the text/link of the cards*/
-.card-details{
-  margin:30px;
+.card-details {
+  margin: 30px;
 }
 
 .card-details a:link {
   text-decoration: none;
-  color:#303F9F;
+  color: #303f9f;
 }
-.pay{
+.pay {
   text-align: center;
 }
 
 /* Style for the buttons of the slider */
 .card-details ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
 }
 
-.card-details ul li { 
-  display: inline-block; 
+.card-details ul li {
+  display: inline-block;
   text-align: center;
-  border-radius:50%;
-  background-color:#03A9F4;
-  height:8px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  height: 8px;
   cursor: pointer;
-  width:8px;
-  
+  width: 8px;
 }
 .card-details ul li.active {
   background-color: transparent;
   border: 2px solid #283593;
   box-sizing: border-box;
-  height:10px;
-  width:10px;
+  height: 10px;
+  width: 10px;
 }
 
-.card-details img{
-  width:100px;
-  height:100px;
-  float:right;
+.card-details img {
+  width: 100px;
+  height: 100px;
+  float: right;
 }
-.one{
-    margin-top:-30px;
-  }
-.two{
-    margin-top:-20px;
-  }
+.one {
+  margin-top: -30px;
+}
+.two {
+  margin-top: -20px;
+}
 
 /* Media queries*/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
- .slider-card {
-   width: 315px;
-   margin-left: 15px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .slider-card {
+    width: 315px;
+    margin-left: 15px;
   }
 }
 
@@ -298,9 +295,55 @@ and (max-device-width : 480px) {
 
 /* Blog y Experiencia */
 .blog-experiencie {
-  background-color: rgb(129, 124, 156);
+  text-align: center;
 }
-
+.blog-experiencie h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+.blog-content {
+  display: flex;
+  justify-content: center;
+}
+.blog-content__letter {
+  font-size: 9rem;
+}
+.blog-description {
+  font-size: 2.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.blog-experiencie button {
+  margin: 2rem;
+}
+article {
+  display: flex;
+  padding: 1rem 5rem;
+}
+article img {
+  width: 7rem;
+  border-radius: 50%;
+}
+.experience {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.experience-commet {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.experience-locate {
+  display: flex;
+  justify-content: space-between;
+}
+.fas {
+  color: rgb(255, 166, 0);
+  font-size: 1.5rem;
+}
 @media (min-width: 600px) {
   .c1 {
     width: 25%;
@@ -340,23 +383,23 @@ and (max-device-width : 480px) {
   }
 }
 
-
 /* Start Footer */
-.footer{
+.footer {
   width: 100%;
   min-width: 150px;
   height: 150px;
   flex-wrap: nowrap;
   flex-direction: column;
   padding: 0 2rem;
+  padding-top: 3rem;
 }
 
-.footer__network{
+.footer__network {
   display: flex;
   height: 90px;
 }
 
-.footer__network h4{
+.footer__network h4 {
   font-size: 2rem;
   padding: 1rem 0;
 }
@@ -375,29 +418,29 @@ and (max-device-width : 480px) {
   color: black;
 }
 
-.footer__network-following{
+.footer__network-following {
   flex: 1;
 }
 
-.footer__network-contact_us{
+.footer__network-contact_us {
   flex: 1;
 }
 
-.footer__logo{
+.footer__logo {
   display: block;
   position: relative;
   text-align: center;
 }
 
-.footer__links_Pages{
+.footer__links_Pages {
   text-align: center;
 }
 
-.footer__links_Pages{
+.footer__links_Pages {
   padding: 1rem 0;
 }
 
-.footer__links_Pages a{
+.footer__links_Pages a {
   /*font-family: Arial, Helvetica, sans-serif;*/
   font-size: 1.2rem;
   text-decoration: none;
@@ -407,23 +450,23 @@ and (max-device-width : 480px) {
   padding: 0.2rem 0.8rem;
 }
 
-.footer__copywrite{
+.footer__copywrite {
   padding-top: 1em;
   font-size: 1.3rem;
 }
 
-.footer__version{
+.footer__version {
   /*border-top: 1px solid black;*/
   padding: 1rem 0;
   display: flex;
   font-size: 1.4rem;
 }
 
-.footer__version-number{
+.footer__version-number {
   flex: 1;
 }
 
-.footer__version-by{
+.footer__version-by {
   flex: 1;
   text-align: right;
 }
