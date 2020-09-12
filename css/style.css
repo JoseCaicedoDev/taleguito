@@ -113,7 +113,7 @@ figure img {
 }
 
 .present,
-.c2,
+.get_action,
 .pillars,
 .values,
 .blog-experiencie {
@@ -154,8 +154,101 @@ button {
   background-color: #2691a8;
 }
 
-.c2 {
-  background-color: rgb(61, 41, 172);
+/* Toma Acción */
+
+.get_action {
+  /*background-color: #99b0b585;*/
+  text-align: center;
+}
+.get_action h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.card-container {
+  overflow: hidden;
+}
+
+/*Styles for the content-car*/
+.content-card {
+  white-space: nowrap;
+  transition: all 1s cubic-bezier(0.68, 0, 0.265, 1);
+  will-change: transform;
+}
+
+/*Styles for the body-card*/
+.slider-card {
+  width: 400px;
+  background-color: #99b0b585;
+  height:250px;
+  margin:20px;
+  /*-webkit-box-shadow: 1px -1px 32px -2px rgba(181,181,181,1);
+  -moz-box-shadow: 1px -1px 32px -2px rgba(181,181,181,1);
+  box-shadow: 1px -1px 32px -2px rgba(181,181,181,1);*/
+  border-radius: 10px;
+  display: inline-block;
+  cursor: move;
+}
+
+/*Styles for the text/link of the cards*/
+.card-details{
+  margin:30px;
+}
+
+.card-details a:link {
+  text-decoration: none;
+  color:#303F9F;
+}
+.pay{
+  text-align: center;
+}
+
+/* Style for the buttons of the slider */
+.card-details ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.card-details ul li { 
+  display: inline-block; 
+  text-align: center;
+  border-radius:50%;
+  background-color:#03A9F4;
+  height:8px;
+  cursor: pointer;
+  width:8px;
+  
+}
+.card-details ul li.active {
+  background-color: transparent;
+  border: 2px solid #283593;
+  box-sizing: border-box;
+  height:10px;
+  width:10px;
+}
+
+.card-details img{
+  width:100px;
+  height:100px;
+  float:right;
+}
+.one{
+    margin-top:-30px;
+  }
+.two{
+    margin-top:-20px;
+  }
+
+/* Media queries*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+ .slider-card {
+   width: 315px;
+   margin-left: 15px;
+  }
 }
 
 /* Nuestros Pilares */
@@ -212,7 +305,7 @@ button {
   .c1 {
     width: 25%;
   }
-  .c2 {
+  .get_action {
     width: 75%;
   }
   .c3 {
@@ -233,7 +326,7 @@ button {
   .c1 {
     width: 30%;
   }
-  .c2 {
+  .get_action {
     width: 40%;
   }
   .c3 {
