@@ -157,7 +157,7 @@ button {
 /* Toma Acción */
 
 .get_action {
-  background-color: #99b0b585;
+  /*background-color: #99b0b585;*/
   text-align: center;
 }
 .get_action h2 {
@@ -179,7 +179,7 @@ button {
 /*Styles for the body-card*/
 .slider-card {
   width: 400px;
-  background-color: white;
+  background-color: #99b0b585;
   height:250px;
   margin:20px;
   /*-webkit-box-shadow: 1px -1px 32px -2px rgba(181,181,181,1);
