@@ -114,31 +114,97 @@ figure img {
 
 .present,
 .c2,
-.c3,
-.c4,
-.c5 {
+.pillars,
+.values,
+.blog-experiencie {
   width: 100%;
   min-width: 150px;
-  height: 150px;
 }
+
+/* Presentación */
+
 .present {
   margin-top: 8.1rem;
-  background-image: url("../img/pexels-marta-ortigosa-3480494.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 60rem;
+  text-align: center;
 }
+.present h1 {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 12rem 0;
+}
+.present p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.present-btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+.present button,
+button {
+  padding: 1rem 0rem;
+  border-radius: 2rem;
+  width: 11rem;
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #2691a8;
+}
+
 .c2 {
   background-color: rgb(61, 41, 172);
 }
-.c3 {
-  background-color: rgb(87, 72, 173);
+
+/* Nuestros Pilares */
+
+.pillars {
+  text-align: center;
 }
-.c4 {
-  background-color: rgb(120, 111, 170);
+.pillars h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
 }
-.c5 {
+.pillars-list {
+  text-align: left;
+  padding: 0 3.5rem;
+  list-style: none;
+  font-size: 1.8rem;
+}
+.pillars-list li {
+  display: flex;
+  align-items: center;
+}
+.pillars-list img {
+  width: 50px;
+  margin: 0 1rem;
+}
+.pillars button {
+  margin: 2rem;
+}
+
+/* Nuestros Valores */
+
+.values {
+  text-align: center;
+}
+.values h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+.values-list {
+  text-align: left;
+  padding: 0 7rem;
+  font-size: 1.8rem;
+}
+.values button {
+  margin: 2rem;
+}
+
+/* Blog y Experiencia */
+.blog-experiencie {
   background-color: rgb(129, 124, 156);
 }
 
