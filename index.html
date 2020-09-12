@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taleguitos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <figure>
+        <img src="img/logoTaleguitos.jpg" alt="logo Taleguitos" />
+      </figure>
+      <!--       <i class="icon-menu burger_button" id="burger_menu"></i> -->
+      <div class="hamburger">
+        <div class="hamburger-inner" id="burger_menu"></div>
+      </div>
+
+      <!-- START NAV -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Nuestros productos</a></li>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- END NAV -->
+    </header>
+
+    <main class="container">
+      <!-- START PRESENT -->
+      <section class="present">
+        <h1># Protejamos Juntos El Planeta</h1>
+        <div class="present-btn">
+          <p>Pide ya los tuyos</p>
+          <button>E-mail</button>
+          <button>WhatsApp</button>
+        </div>
+
+        <button>Conoce más</button>
+      </section>
+      <!-- END PRESENT -->
+
+      <!-- START ACTION-->
+      <section class="c2">toma acción</section>
+      <section class="c3">nuestros Pilares</section>
+      <section class="c4">nuestros valores</section>
+      <section class="c5">blog y experiencia</section>
+    </main>
+    <footer class="container">footer</footer>
+    <script>
+      /* const mediaIpad = window.matchMedia("screen and (min-width: 767px)"); */
+      const menu = document.querySelector(".navbar");
+      const burgerButton = document.querySelector("#burger_menu");
+
+      burgerButton.addEventListener("click", hideShow);
+      /*       mediaIpad.addListener(validation);
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener("touchstart", hideShow);
+        } else {
+          burgerButton.removeEventListener("touchstart", hideShow);
+        }
+      }
+      validation(mediaIpad); */
+      $(".hamburger").click(function () {
+        $(".hamburger").toggleClass("open");
+      });
+
+      function hideShow() {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+        }
+      }
+    </script>
+  </body>
+</html>

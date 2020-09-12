@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  position: fixed;
+  background: white;
+  width: 100%;
+  min-width: 150px;
+  height: 8.1rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+figure {
+  height: 8rem;
+}
+figure img {
+  height: 100%;
+}
+
+/* menu */
+.navbar {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  top: 8rem;
+  right: -100vw;
+  width: 100vw;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  border-top: 1px solid rgba(109, 109, 109, 0.5);
+}
+.navbar.is-active {
+  right: 0;
+}
+.navbar ul {
+  list-style: none;
+  width: 100%;
+}
+.navbar li {
+  margin: 1rem 0;
+  text-align: center;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: black;
+}
+/* .burger_button {
+  font-size: 3rem;
+  cursor: pointer;
+} */
+.hamburger {
+  width: 40px;
+  min-height: 30px;
+  max-width: 50px;
+}
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  background-color: rgb(37, 37, 37);
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  content: "";
+  transition-timing-function: ease;
+  transition-duration: 0.2s;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+.hamburger-inner:before {
+  top: 10px;
+}
+
+.hamburger-inner:after {
+  top: 20px;
+}
+
+.hamburger.open .hamburger-inner {
+  -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.hamburger.open .hamburger-inner:after {
+  -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
+  transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+
+.hamburger.open .hamburger-inner:before {
+  -webkit-transform: translate3d(0, -20px, 0) rotate(90deg);
+  transform: translate3d(0, -20px, 0) rotate(90deg);
+  opacity: 0;
+}
+
+.present,
+.c2,
+.c3,
+.c4,
+.c5 {
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+}
+.present {
+  margin-top: 8.1rem;
+  background-image: url("../img/pexels-marta-ortigosa-3480494.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60rem;
+}
+.c2 {
+  background-color: rgb(61, 41, 172);
+}
+.c3 {
+  background-color: rgb(87, 72, 173);
+}
+.c4 {
+  background-color: rgb(120, 111, 170);
+}
+.c5 {
+  background-color: rgb(129, 124, 156);
+}
+
+footer {
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+  background-color: rgb(209, 209, 209);
+}
+
+@media (min-width: 600px) {
+  .c1 {
+    width: 25%;
+  }
+  .c2 {
+    width: 75%;
+  }
+  .c3 {
+    width: 50%;
+  }
+  .c4 {
+    width: 50%;
+  }
+  .c5 {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .c1 {
+    width: 30%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  .c3 {
+    width: 30%;
+  }
+  .c4 {
+    width: 50%;
+  }
+  .c5 {
+    width: 50%;
+  }
+}
