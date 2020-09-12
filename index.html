@@ -6,6 +6,7 @@
     <title>Taleguitos</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="icons/fontawesome5/css/all.min.css" />
     <script src="js/jquery.min.js"></script>
   </head>
   <body>
@@ -82,33 +83,53 @@
       </section>
       <!-- END BLOG & EXPERENCIE-->
     </main>
-    <footer class="container">footer</footer>
-    <script>
-      /* const mediaIpad = window.matchMedia("screen and (min-width: 767px)"); */
-      const menu = document.querySelector(".navbar");
-      const burgerButton = document.querySelector("#burger_menu");
+    
+    <!-- START FOOTER -->
+    <footer class="container footer">
+      <div class="footer__network">
+        <div class="footer__network-following">
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> talqguitosr_</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> talqguitosr</a></li>
+          </ul>
+        </div>
+        <div class="footer__network-contact_us">
+          <h4>Contáctanos</h4>
+          <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i> (+57) 311-2010378</a></li>
+            <li><a href="#" target="_blank"><i class="far fa-envelope"></i> hola@taleguitos.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__logo">
+        <figure>
+          <img src="img/logoTaleguitos.jpg" alt="logo Taleguitos">
+        </figure>
+      </div>
+      <div class="footer__links_Pages">
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Acerca de nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="#">Blog</a>
+        <a href="#">Pilares</a>
+        <a href="#">Valores</a>
+      </div>
+      <div class="footer__copywrite">
+        <span>&copy; Taleguitos 2020</span>
+      </div>
+      <div class="footer__version">
+        <div class="footer__version-number">
+          v1.0.0
+        </div>
+        <div class="footer__version-by">
+          by JC
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
 
-      burgerButton.addEventListener("click", hideShow);
-      /*       mediaIpad.addListener(validation);
-      function validation(event) {
-        if (event.matches) {
-          burgerButton.addEventListener("touchstart", hideShow);
-        } else {
-          burgerButton.removeEventListener("touchstart", hideShow);
-        }
-      }
-      validation(mediaIpad); */
-      $(".hamburger").click(function () {
-        $(".hamburger").toggleClass("open");
-      });
-
-      function hideShow() {
-        if (menu.classList.contains("is-active")) {
-          menu.classList.remove("is-active");
-        } else {
-          menu.classList.add("is-active");
-        }
-      }
-    </script>
+    <script src="js/jquery.min.js"></script>
   </body>
 </html>
